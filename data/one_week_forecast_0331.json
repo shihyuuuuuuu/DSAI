@@ -1,0 +1,1249 @@
+{
+ "cwbdata": {
+  "@xmlns": "urn:cwb.gov.tw:cwbdata-0.1", 
+  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance", 
+  "@xsi:schemaLocation": "urn:cwb.gov.tw:cwbdata-0.1 http://odtest.cwb.gov.tw/XSD/CWB-data-0.1.xsd", 
+  "identifier": "472c7047-eb48-4aa1-8fc0-9be46a234889", 
+  "datasetID": "F-AMD-2001", 
+  "datasetName": "農業氣象預報", 
+  "dataItemID": "F-AMD-2001-00001", 
+  "sender": "weather@cwb.gov.tw", 
+  "sent": "2019-03-29T17:09:02+08:00", 
+  "status": "Actual", 
+  "scope": "Public", 
+  "msgType": "Issue", 
+  "publisherOID": "2.16.886.101.20003.20008.20004", 
+  "resources": {
+   "resource": {
+    "metadata": {
+     "resourceName": "中央氣象局氣候服務_農業氣象一週預報", 
+     "resourceDescription": "提供氣象局預報資料和農事建議，供農業相關單位及農民參考", 
+     "language": "zh", 
+     "homepage": "https://www.cwb.gov.tw/V7/forecast/week/w44.htm", 
+     "sources": {
+      "source": [
+       {
+        "title": "1週預報", 
+        "path": "https://www.cwb.gov.tw/V7/forecast/week/week.htm"
+       }, 
+       {
+        "title": "長期天氣預報-季長期天氣展望", 
+        "path": "https://opendata.cwb.gov.tw/catalog%3fgroup%3df%26dataid%3dA0013-002"
+       }, 
+       {
+        "title": "天氣特報-豪大雨特報", 
+        "path": "https://opendata.cwb.gov.tw/catalog%3fgroup%3dw%26dataid%3dC0033-003"
+       }
+      ]
+     }, 
+     "temporal": {
+      "issueTime": "2019-03-29T17:00:00+08:00", 
+      "validTime": {
+       "startTime": "2019-03-30T00:00:00+08:00", 
+       "endTime": "2019-04-06T00:00:00+08:00"
+      }
+     }, 
+     "weatherElements": {
+      "weatherElement": [
+       {
+        "tagName": "weather", 
+        "description": "天氣描述"
+       }, 
+       {
+        "tagName": "temperature", 
+        "description": "氣溫", 
+        "units": "˚C"
+       }, 
+       {
+        "tagName": "agrWeatherForecasts", 
+        "description": "一週農業天氣預報"
+       }, 
+       {
+        "tagName": "weatherProfile", 
+        "description": "天氣概況"
+       }, 
+       {
+        "tagName": "weatherForecasts", 
+        "description": "天氣預報"
+       }, 
+       {
+        "tagName": "agrAdvices", 
+        "description": "農事建議"
+       }, 
+       {
+        "tagName": "degreeDay", 
+        "description": "度日(植物發育時所需之有效溫度單位)", 
+        "units": "GDD"
+       }, 
+       {
+        "tagName": "accumulatedTemperature", 
+        "description": "積溫(植物發育過程中，當各生育階段有效溫度累積至一定數值時，即可完成發育。該數值即稱為此一發育階段所需的積溫。)", 
+        "units": "ATU"
+       }, 
+       {
+        "tagName": "cardinalTemperatures", 
+        "description": "作物生長溫度區間", 
+        "units": "˚C", 
+        "statisticalMethods": {
+         "statisticalMethod": [
+          {
+           "methodTagName": "minimum", 
+           "description": "生長最低溫"
+          }, 
+          {
+           "methodTagName": "maximum", 
+           "description": "生長最高溫"
+          }, 
+          {
+           "methodTagName": "optimum", 
+           "description": "生長最適溫"
+          }
+         ]
+        }
+       }, 
+       {
+        "tagName": "growingDays", 
+        "description": "生育日數"
+       }, 
+       {
+        "tagName": "cropStatistics", 
+        "description": "農業積溫統計"
+       }, 
+       {
+        "tagName": "agrReport", 
+        "description": "其他建議"
+       }, 
+       {
+        "tagName": "section", 
+        "description": "其他建議主段落"
+       }, 
+       {
+        "tagName": "subsection", 
+        "description": "其他建議副段落"
+       }
+      ]
+     }
+    }, 
+    "data": {
+     "agrWeatherForecasts": {
+      "weatherProfile": "30日東北季風影響,北部及東北部天氣稍轉涼;北部、東半部地區及中南部山區有局部短暫陣雨,其他地區局部短暫陣雨後多雲。31日、4月1日東北季風再增強,北部及東北部天氣較涼,其他地區早晚亦涼;31日華南雲雨區東移,北部及東北部地區有短暫陣雨,其他地區亦有局部短暫陣雨;4月1日北部、東半部地區及中南部山區有局部短暫陣雨,其他地區為多雲到晴。4月2日起東北季風減弱,各地氣溫逐漸回升,2日、3日東半部地區及西半山區有局部短暫陣雨,其他地區為多雲到晴。4日、5日北部及東半部地區有短暫陣雨,中南部山區亦有局部短暫陣雨,其他地區為多雲到晴。4月3日至5日金門、馬祖、澎湖及西半部地區易有局部霧或低雲影響能見度,請注意。", 
+      "weatherForecasts": {
+       "location": [
+        {
+         "locationName": "北部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "24"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "26"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "16"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "15"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "16"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "20"
+            }
+           ]
+          }
+         }
+        }, 
+        {
+         "locationName": "中部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "多雲時晴", 
+             "weatherid": "3"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "晴時多雲", 
+             "weatherid": "2"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "晴時多雲", 
+             "weatherid": "2"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "29"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "27"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "26"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "28"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "28"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "29"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "21"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "17"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "20"
+            }
+           ]
+          }
+         }
+        }, 
+        {
+         "locationName": "南部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "多雲時晴", 
+             "weatherid": "3"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "多雲", 
+             "weatherid": "4"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "晴時多雲", 
+             "weatherid": "2"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "晴時多雲", 
+             "weatherid": "2"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "30"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "30"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "27"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "28"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "30"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "29"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "31"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "21"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "21"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "21"
+            }
+           ]
+          }
+         }
+        }, 
+        {
+         "locationName": "東北部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲時陰短暫陣雨", 
+             "weatherid": "9"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "陰短暫陣雨", 
+             "weatherid": "11"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "24"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "26"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "17"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "16"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "16"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "19"
+            }
+           ]
+          }
+         }
+        }, 
+        {
+         "locationName": "東部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "陰時多雲短暫陣雨", 
+             "weatherid": "10"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "陰時多雲短暫陣雨", 
+             "weatherid": "10"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "24"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "21"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "26"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "27"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "18"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "20"
+            }
+           ]
+          }
+         }
+        }, 
+        {
+         "locationName": "東南部地區", 
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "weather": "多雲時陰短暫陣雨", 
+             "weatherid": "9"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "weather": "多雲短暫陣雨", 
+             "weatherid": "8"
+            }
+           ]
+          }, 
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "26"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "25"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "23"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "24"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "26"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "27"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "29"
+            }
+           ]
+          }, 
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "temperature": "20"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "temperature": "19"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "temperature": "21"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "temperature": "22"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "temperature": "22"
+            }
+           ]
+          }
+         }
+        }
+       ]
+      }, 
+      "agrAdvices": {
+       "agrForecasts": {
+        "location": [
+         {
+          "locationName": "北部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "12.0", 
+             "accumulatedTemperature": "12.0"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "9.0", 
+             "accumulatedTemperature": "21.0"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "8.5", 
+             "accumulatedTemperature": "29.5"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "10.0", 
+             "accumulatedTemperature": "39.5"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "11.5", 
+             "accumulatedTemperature": "51.0"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "11.5", 
+             "accumulatedTemperature": "62.5"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "13.0", 
+             "accumulatedTemperature": "75.5"
+            }
+           ]
+          }
+         }, 
+         {
+          "locationName": "中部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "15.0", 
+             "accumulatedTemperature": "15.0"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "13.0", 
+             "accumulatedTemperature": "28.0"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "11.0", 
+             "accumulatedTemperature": "39.0"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "12.0", 
+             "accumulatedTemperature": "51.0"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "13.0", 
+             "accumulatedTemperature": "64.0"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "14.0", 
+             "accumulatedTemperature": "78.0"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "14.5", 
+             "accumulatedTemperature": "92.5"
+            }
+           ]
+          }
+         }, 
+         {
+          "locationName": "南部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "15.5", 
+             "accumulatedTemperature": "15.5"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "15.0", 
+             "accumulatedTemperature": "30.5"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "13.0", 
+             "accumulatedTemperature": "43.5"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "13.5", 
+             "accumulatedTemperature": "57.0"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "15.0", 
+             "accumulatedTemperature": "72.0"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "15.0", 
+             "accumulatedTemperature": "87.0"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "16.0", 
+             "accumulatedTemperature": "103.0"
+            }
+           ]
+          }
+         }, 
+         {
+          "locationName": "東北部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "11.5", 
+             "accumulatedTemperature": "11.5"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "8.5", 
+             "accumulatedTemperature": "20.0"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "7.5", 
+             "accumulatedTemperature": "27.5"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "9.0", 
+             "accumulatedTemperature": "36.5"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "11.5", 
+             "accumulatedTemperature": "48.0"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "12.0", 
+             "accumulatedTemperature": "60.0"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "12.5", 
+             "accumulatedTemperature": "72.5"
+            }
+           ]
+          }
+         }, 
+         {
+          "locationName": "東部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "12.0", 
+             "accumulatedTemperature": "12.0"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "10.5", 
+             "accumulatedTemperature": "22.5"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "9.5", 
+             "accumulatedTemperature": "32.0"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "10.0", 
+             "accumulatedTemperature": "42.0"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "12.0", 
+             "accumulatedTemperature": "54.0"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "13.0", 
+             "accumulatedTemperature": "67.0"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "13.5", 
+             "accumulatedTemperature": "80.5"
+            }
+           ]
+          }
+         }, 
+         {
+          "locationName": "東南部地區", 
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2019-03-30", 
+             "degreeDay": "14.0", 
+             "accumulatedTemperature": "14.0"
+            }, 
+            {
+             "dataDate": "2019-03-31", 
+             "degreeDay": "12.5", 
+             "accumulatedTemperature": "26.5"
+            }, 
+            {
+             "dataDate": "2019-04-01", 
+             "degreeDay": "11.0", 
+             "accumulatedTemperature": "37.5"
+            }, 
+            {
+             "dataDate": "2019-04-02", 
+             "degreeDay": "11.5", 
+             "accumulatedTemperature": "49.0"
+            }, 
+            {
+             "dataDate": "2019-04-03", 
+             "degreeDay": "13.5", 
+             "accumulatedTemperature": "62.5"
+            }, 
+            {
+             "dataDate": "2019-04-04", 
+             "degreeDay": "14.5", 
+             "accumulatedTemperature": "77.0"
+            }, 
+            {
+             "dataDate": "2019-04-05", 
+             "degreeDay": "15.5", 
+             "accumulatedTemperature": "92.5"
+            }
+           ]
+          }
+         }
+        ]
+       }, 
+       "cropStatistics": {
+        "crop": {
+         "cropName": "水稻", 
+         "cardinalTemperatures": {
+          "growingStage": {
+           "description": "稻作生長溫度", 
+           "minimum": "10", 
+           "maximum": "40"
+          }
+         }, 
+         "location": [
+          {
+           "locationName": "花蓮地區", 
+           "cropBreed": "臺農67號", 
+           "statistics": {
+            "fifteenYears": {
+             "description": "一期稻作生育日數及生育期總積溫(15年平均值)", 
+             "timePeriod": [
+              {
+               "description": "插秧至抽穗", 
+               "growingDays": "98", 
+               "accumulatedTemperature": "1090.23"
+              }, 
+              {
+               "description": "插秧至收穫", 
+               "growingDays": "136", 
+               "accumulatedTemperature": "1697.62"
+              }
+             ]
+            }, 
+            "thisYear": {
+             "description": "108年一期稻作積溫值 (各改良場豐歉試驗臺農67號)", 
+             "dibblingDate": "2019-01-22", 
+             "timePeriod": {
+              "description": "插秧至本日", 
+              "startDate": "2019-01-22", 
+              "endDate": "2019-03-28", 
+              "growingDays": "66", 
+              "accumulatedTemperature": "662.75"
+             }
+            }
+           }
+          }, 
+          {
+           "locationName": "高雄地區", 
+           "cropBreed": "臺農67號", 
+           "statistics": {
+            "fifteenYears": {
+             "description": "一期稻作生育日數及生育期總積溫(15年平均值)", 
+             "timePeriod": [
+              {
+               "description": "插秧至抽穗", 
+               "growingDays": "93", 
+               "accumulatedTemperature": "1155.48"
+              }, 
+              {
+               "description": "插秧至收穫", 
+               "growingDays": "124", 
+               "accumulatedTemperature": "1699.05"
+              }
+             ]
+            }, 
+            "thisYear": {
+             "description": "108年一期稻作積溫值 (各改良場豐歉試驗臺農67號)", 
+             "dibblingDate": "2019-01-18", 
+             "timePeriod": {
+              "description": "插秧至本日", 
+              "startDate": "2019-01-18", 
+              "endDate": "2019-03-28", 
+              "growingDays": "70", 
+              "accumulatedTemperature": "907.45"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }, 
+       "agrReport": {
+        "section": [
+         {
+          "content": "春天天氣變化快速,預報不確定性大,請農友多參考本局提供之更精細天氣預報資訊,以有效規劃相關作業,未來10日天氣摘要如下:", 
+          "subsection": [
+           {
+            "content": "週六(30日)微弱東北季風影響,白天北部氣溫稍降,水氣仍多,全臺都有局部短暫陣雨,提醒農友農作或外出時記得攜帶相關雨具。"
+           }, 
+           {
+            "content": "下週日至下週二(31日至4月2日)東北季風持續影響,中部以北及東北部天氣較涼,南部地區及花東早晚也頗有涼意;這段期間水氣由多轉少,下週日受華南雲雨區東移影響,各地仍有斷斷續續的降雨,下週一開始逐漸轉乾,降雨範圍縮減,剩下東半部、北部地區及中南部山區仍有局部短暫陣雨,其他地區為多雲到晴。"
+           }, 
+           {
+            "content": "下週三、下週四(3日、4日)東北季風減弱,各地氣溫開始回升;東半部地區及中南部山區仍有短暫陣雨,其他地區為多雲到晴。"
+           }, 
+           {
+            "content": "4月5日至7日東北季風稍增強,天氣轉涼,迎風面降雨機率有增高的趨勢。"
+           }, 
+           {
+            "content": "週五(29日)週五及下週四於金門、馬祖、澎湖及西半部地區易有局部霧或低雲影響能見度,籲請相關地區農友於交通往返時注意安全。"
+           }, 
+           {
+            "content": "根據行政院環保署空氣品質預報資訊:29日鋒面通過及東北季風稍增強影響,並挾帶輕微境外污染南下影響,影響程度受降雨強度而空氣品質有所變化,白天風速偏弱,擴散條件較差,污染物易累積;午後風速增強,空氣品質稍好轉。臺灣29日除花東空品區為良好等級外,全臺空氣品質大多為普通等級。"
+           }
+          ]
+         }, 
+         {
+          "content": "未來1個月長期天氣展望(有效期間:自108年3月30日至108年4月26日):", 
+          "subsection": [
+           {
+            "content": "模式預測未來第1週期中前受東北季風及華南雲雨區東移影響,各地有局部短暫雨,感受偏涼,隨後東北季風減弱,氣溫回升。整體來說,未來兩週華南一帶水氣偏多,臺灣仍有受到鋒面及東北季風影響的可能,影響期間迎風面降雨機率增加;惟春天天氣變化較快,模式掌握能力較低,請隨時注意本局所發布的最新預報資訊。"
+           }, 
+           {
+            "content": "第1週:平均氣溫預測,各地以「接近」氣候正常值的機率最大。雨量預測,各地以「接近」氣候正常值的機率最大。"
+           }, 
+           {
+            "content": "第2週:平均氣溫預測,各地以「低於」氣候正常值的機率最小;雨量預測,各地以「接近」氣候正常值的機率最大。"
+           }, 
+           {
+            "content": "第1-4週:1個月之展望,平均溫度預測,各地以「低於」氣候正常值的機率最小;雨量預測,各地以「接近」氣候正常值的機率最大。"
+           }
+          ]
+         }, 
+         {
+          "content": "荔枝椿象開始活動,籲請農友注意:", 
+          "subsection": [
+           {
+            "content": "近日溫度逐漸回暖,「荔枝椿象」即將開始交尾產卵,行政院農業委員會花蓮區農業改良場呼籲農友及民眾須特別注意。荔枝椿象一年一世代,成蟲體呈黃褐色,若蟲體型為長方形,初孵化時呈紫紅色,成蟲和若蟲主要吸食龍眼、荔枝的嫩芽、嫩梢、花穗及幼果汁液,導致落花、落果及果皮黑化,同為無患子科的台灣欒樹亦為荔枝椿象的寄主。民眾若刻意驚擾此蟲,其分泌的臭液接觸到皮膚將引發灼熱及刺痛感,甚至留下疤痕。從事農業生產的龍眼荔枝若遭受此蟲危害,可參考以下處理方式:1、冬季結束開始回溫時,施用下列任一推薦藥劑:丁基加保扶、亞滅培、賽洛寧。荔枝龍眼開花期則停止用藥,以免造成蜜蜂中毒。2、逢3∼5月間為荔枝椿象交配產卵盛期,若於葉片上發現有荔枝椿象卵粒,儘速摘除銷毀,其卵粒通常為14粒整齊排列。或者搭配施放天敵-平腹小蜂,其可產卵於荔枝椿象卵內,造成椿象卵死亡無法孵化。3、開花結束後於小果期可再度使用上述核准藥劑,此時荔枝椿象大多為若蟲期,不會飛行,用藥效果較佳。4、手持長柄捕蟲網內放塑膠袋加醋酸,震落蟲體於袋內予以捕殺。"
+           }, 
+           {
+            "content": "從事農業生產以外的環境若發現荔枝椿象,在藥劑方面依規定必須施用有別於上述的特殊環境衛生用藥。由於目前在宜蘭花蓮地區除了少面積的龍眼農業生產之外,其餘則為民宅自行種植,民眾若發現荔枝椿象,可聯繫當地病媒防治業者進行環衛用藥處理。若有相關問題可電洽花蓮農改場植物保護研究室03-8521108轉3603詢問。(資料來源:行政院農業委員會花蓮區農業改良場)"
+           }
+          ]
+         }, 
+         {
+          "content": "目前草莓正值採收期,草莓一般於5月至9月育苗,9月底至10月初定植,正常約11月下旬開始採收,可採至翌年3至4月底。近期受東北季風影響,北部及東半部地區仍有短暫雨的機會,各產區可能面臨不同病害之威脅,籲請農友注意近期天氣變化及以下病害防治:", 
+          "subsection": [
+           {
+            "content": "白粉病:1、本病原菌為絕對寄生菌(Obligate Parasite),只危害栽培之草莓,適當條件下4-6小時即可發芽感染,1週之內可完成1個世代。氣溫15∼27℃之間最適合本病發病,平地自12月上旬起即可發現,2∼3月間發生最為劇烈,平地至5月後因夏季高溫多濕而逐漸消失,高冷地苗圃在夏季亦能危害嚴重。2、白粉病危害先由下位葉開始,葉背產生白色菌絲,初期產生圓形病斑,之後病斑表面產粉末狀孢子,感染範圍可擴及走莖、花、果柄及果實。近成熟果實受感染造成果實腐爛。3、栽培過程中應注意清除罹病株、配合噴霧控制田間空氣濕度,降低孢子分散傳播。未發病時可施用1000倍亞磷酸與1000倍氫氧化鉀中和之溶液,每7天施用一次,連續2∼3次,可提高植株對病害之抵抗力,惟需發病前施用才有效。4、一般最佳防治時期為發病初期,可選擇2種以上輕毒性或低毒性藥劑交替進行防治,惟需嚴格遵守安全採收期之規範。可選擇克收欣50%水分散性粒劑3000倍(安全採收期3天)、布瑞莫25%乳劑3000倍(安全採收期3天)及賽福座30%可濕性粉劑3000(安全採收期7天)等植物保物手冊核准使用之藥劑。發病期若正值採果期,較建議使用碳酸氫鉀80%水溶性粉劑1000倍或礦物油99%乳劑500倍等免訂安全採收期之防治藥劑。"
+           }, 
+           {
+            "content": "灰黴病:1、本病病原菌腐生能力極強,低溫高濕季節最易發生。寄主範圍極為廣泛,除草莓外,多種蔬菜、水果、花卉等作物均可被感染,亦可在各種植體殘株上存活、生長,遇適當的環境時,短時間內可形成大量的分生孢子,成為第二次感染源,藉空氣與雨水傳播,發病主要與雨量之多寡相關,一般3月份後降雨日數增加,灰黴病罹病率顯著提高。2、栽培過程中應注意清除罹病株、摘除的罹病葉與果均需徹底攜離栽培園區。栽培時避免過密栽植,促進通風使植株生長旺盛,提升抗性。避免園區濕度過高,減少植株表面游離水存在的時間。避免黃昏供水,並加強排水,以防止田區夜間濕度過高,藉以降低感染。3、田畦面覆蓋塑膠布,可避免果實直接接觸潮濕土壤,可降低病原菌傳播4、合理化施肥,避免施用過量氮肥,促進植株健康度,可降低病害發生。5、未發病時可施用1000倍亞磷酸與1000倍氫氧化鉀中和之溶液,每7天施用一次,連續2∼3次,可提高植株對病害之抵抗力。發病初期,可選擇2種以上輕毒性或低毒性藥劑交替進行防治,惟需嚴格遵守安全採收期之規範。可選擇白克列50%水分散性粒劑1500倍(安全採收期5天)、依普同23•7%水懸劑1000倍(安全採收期3天)及免克寧50%水分散粒劑1500倍(安全採收期)3天。"
+           }
+          ]
+         }, 
+         {
+          "content": "防檢局於官網及植物疫情管理資訊網推出水稻疫情簡易燈號資訊服務,即時供農友掌握疫情現況提早預防。該局為協助農民及時掌握疫情現況並提早預為因應,已建構完成疫情簡易燈號資訊服務網,並透過不同燈號提供疫情最新現況資訊。簡易燈號綠藍黃紅,農民看燈號作防治:", 
+          "subsection": [
+           {
+            "content": "「綠燈」表示尚無稻熱病疫情及發生風險。"
+           }, 
+           {
+            "content": "「藍燈」表示環境適合稻熱病發生,應加強注意及早防範。"
+           }, 
+           {
+            "content": "「黃燈」表示田間已有部分稻熱病輕度危害,可能發生流行性疫情,應加強注意田間疫情現況並適時進行防治。"
+           }, 
+           {
+            "content": "「紅燈」表示稻熱病已於田間大規模發生,應立即加強防治措施,否則將對收穫造成重大損失。"
+           }, 
+           {
+            "content": "為強化水稻疫情之預警措施,該局已於本年度委託農委會所屬各區農業改良場於轄內好發地區,選定一處田區種植感病水稻品種秧砧,進行稻熱病疫情早期監測工作;並自各區農業改良場及疫情調查員開始疫情監測工作,並即時將相關疫情資訊建置於該局植物疫情管理資訊網-民眾資訊服務站之稻熱病疫情現況專區網站(網址:http://phis.baphiq.gov.tw/WebEvery.nsf/index),俾以提供民眾查詢。"
+           }
+          ]
+         }, 
+         {
+          "content": "未來1個月長期天氣展望(有效期間:自108年3月23日至108年4月19日):", 
+          "subsection": [
+           {
+            "content": "模式預測未來2週天氣多變,第1週期中前受東北季風及華南雲系影響期間,中部以北天氣較涼,有局部短暫雨;其他時間天氣相對穩定,各地大多為多雲到晴。第1週期末至第2週仍有受到鋒面及東北季風影響的機率,影響期間迎風面降雨機率增加,惟春天天氣變化較快,模式掌握能力較低,請隨時注意本局所發布的最新預報資訊。"
+           }, 
+           {
+            "content": "第1週:平均氣溫預測,各地以「低於」氣候正常值的機率最小。雨量預測,各地以「接近」氣候正常值的機率最大。"
+           }, 
+           {
+            "content": "第2週:平均氣溫及雨量預測,各地均以「接近」氣候正常值的機率最大。"
+           }, 
+           {
+            "content": "第1-4週:1個月之展望,預測平均溫度及雨量各地以「接近」氣候正常值的機率最大。"
+           }
+          ]
+         }, 
+         {
+          "content": "未來3個月長期天氣展望(有效期間:自民國108年3月至108年5月):", 
+          "subsection": [
+           {
+            "content": "就氣候上而言,3月及4月逐漸進入春天的季節,西半部易有局部霧發生的機會。此時大陸冷高壓強度逐漸減弱,南方暖空氣勢力漸漸增強,當南、北勢力於臺灣附近交鋒時,為臺灣春雨的重要來源之一,但因春季的天氣系統移速較快,預報不確定性較大。5月起逐漸進入梅雨季,若鋒面在臺灣附近徘徊,容易帶來降雨,並有伴隨雷雨或豪(大)雨發生的機會。"
+           }, 
+           {
+            "content": "展望3月至5月溫度,統計及動力模式一致認為氣溫以正常至偏暖為主;雨量方面,統計模式預測未來一季偏乾,動力模式則預測3月有偏濕的可能,4月及5月臺灣正常至偏乾,惟東北部海面有偏濕訊號。目前赤道中東太平洋的偏暖海溫正逐漸減弱,且熱帶海氣尚未完全耦合,預測聖嬰現象對臺灣影響有限。綜合以上資訊,3月至5月的逐月預報如下:3月:上旬以東北季風影響為主,北臺灣天氣濕涼,其他地區大多為多雲到晴,午後山區亦有零星短暫陣雨。預測平均氣溫各地以「低於」氣候正常值的機會最小;雨量預測,各地少於、接近、多於氣候正常值的機率為20%、50%、30%。4月:天氣變化快速。預測平均氣溫各地以「低於」氣候正常值的機會最小;雨量預測,各地少於、接近、多於氣候正常值的機率為30%、50%、20%。5月:氣候上逐漸進入臺灣梅雨季,當鋒面在臺灣附近徘徊時,易伴隨有雷雨,偶有豪(大)雨發生。預測平均氣溫各地以「低於」氣候正常值的機會最小;雨量預測,各地少於、接近、多於氣候正常值的機率為20%、60%、20%。"
+           }, 
+           {
+            "content": "時序進入春季,天氣系統變化快速,請隨時注意本局所發布的各項最新預報資訊。"
+           }
+          ]
+         }
+        ]
+       }
+      }, 
+      "remark": [
+       "註1:天氣預報中,各縣市預報以各縣市政府所在地附近為預報參考位置。", 
+       "註2:天氣預報高低氣溫出現同值時,表示兩者差距在1℃以內。", 
+       "註3:度日(Degree-days):植物發育時所需之有效溫度單位。", 
+       "註4:積溫:植物發育過程中,當各生育階段有效溫度累積至一定數值時,即可完成發育。該數值即稱為此一發育階段所需的積溫。", 
+       "註5:分別以臺中區農改場、高雄區農改場及花蓮區農改場所進行豐欠試驗稻作和氣象觀測資料進行稻作積溫值計算。", 
+       "註6:稻作積溫值計算出現「-」符號表示該地目前尚未插秧或已經收割。", 
+       "註7:稻作最低、最高生長溫度以10℃、40℃為基準。"
+      ]
+     }
+    }
+   }
+  }
+ }
+}
