@@ -12,7 +12,7 @@ The **"Mix\_add\_sub"** is compared to the **above two**.
 ## About multiplication:
 
 #### Multiplication operation is hard to train
-I tried to let my model learn multiplication, here is my result:
+I tried to let my model learn multiplication, here is my result:<br>
 ![Multiplication](https://github.com/shihyuuuuuuu/DSAI/blob/master/hw2/output/mul.png)
 We can see that the multiplication operation is hard to learn by my model.<br>
 The accuracy on testing data incresed very slow.<br>
